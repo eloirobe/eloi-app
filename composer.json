@@ -1,0 +1,19 @@
+{
+  "name": "eloirobe/app",
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/eloirobe/eloi-fw"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6",
+    "eloirobe/fw": "dev-devel"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/App"
+    }
+  }
+}
