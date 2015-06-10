@@ -1,2 +1,7 @@
 <?php
-echo "Bye earth! Welcome to universe";
+
+require '../vendor/autoload.php';
+use FW\Application;
+
+$application = new Application();
+$application->run();
