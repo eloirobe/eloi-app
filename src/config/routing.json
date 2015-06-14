@@ -1,0 +1,8 @@
+{
+  "blog_show": {
+    "path": "/blog/{slug}",
+      "defaults:": {
+        "_controller": "AppBundle:Blog:show"
+      }
+    }
+}
