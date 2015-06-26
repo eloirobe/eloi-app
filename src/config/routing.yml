@@ -1,3 +1,10 @@
-blog_show:
-    path:      /blog/{slug}
-    defaults:  { _controller: AppBundle:Blog:show }
+home:
+    route: "/"
+    allowed_methods: ['get']
+some-page:
+    route: "/some-page"
+    allowed_methods: ['get']
+
+some-{variable}-page:
+    route: "/some/{variable}/page"
+    allowed_methods: ['get']

@@ -1,0 +1,40 @@
+services:
+    GenericParser:
+        class: Fw\Components\Routing\RouteParser\GenericParser
+        arguments: []
+
+    Database:
+        class:     Fw\Components\Routing\RouteParser\YmlParser
+        arguments: ["%app_root%/../src/config/routing.yml","@GenericParser"]
+
+    GenericDispatcher:
+        class: Fw\Components\Dispatcher\GenericDispatcher
+        arguments: []
+
+    Dispatcher:
+        class: Fw\Components\Dispatcher\HttpYmlDispatcher
+        arguments: ["%app_root%/../src/config/controllers.yml","@GenericDispatcher"]
+
+    JsonView:
+        class: Fw\Components\View\JsonView
+        arguments: []
+
+    Twig_Loader_Filesystem:
+        class: \Twig_Loader_Filesystem
+        arguments: ["%app_root%/../web/templates"]
+
+    Twig_Environment:
+        class: \Twig_Environment
+        arguments: ["@Twig_Loader_Filesystem",%twig_array%]
+
+    WebViewTwig:
+        class: Fw\Components\View\WebViewTwig
+        arguments: ["@Twig_Environment"]
+
+    PDO:
+        class: \PDO
+        arguments: ["mysql:dbname=sakila;host=localhost","root","root"]
+
+    MyPdo:
+        class: Fw\Components\Database\MyPdo
+        arguments: ["@PDO"]

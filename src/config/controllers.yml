@@ -1,0 +1,6 @@
+home:
+  controller: App\Controller\Home
+some-page:
+  controller: App\Controller\SomePage
+some-{variable}-page:
+  controller: App\Controller\SomeVariable
