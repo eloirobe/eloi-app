@@ -4,3 +4,5 @@ some-page:
   controller: App\Controller\SomePage
 some-{variable}-page:
   controller: App\Controller\SomeVariable
+some-{variable}-page-{page}:
+  controller: App\Controller\SomeVariablePage

@@ -3,7 +3,7 @@ services:
         class: Fw\Components\Routing\RouteParser\GenericParser
         arguments: []
 
-    Database:
+    Routing:
         class:     Fw\Components\Routing\RouteParser\YmlParser
         arguments: ["%app_root%/../src/config/routing.yml","@GenericParser"]
 
