@@ -5,6 +5,5 @@ some-page:
 
 some-{variable}-page-{page}:
     route: "/some/{variable}/page/{page}"
-
 #some-{variable}-page:
 #   route: "/some/{variable}/page"

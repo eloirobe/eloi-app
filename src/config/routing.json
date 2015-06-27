@@ -1,8 +1,8 @@
 {
-  "blog_show": {
-    "path": "/blog/{slug}",
-      "defaults:": {
-        "_controller": "AppBundle:Blog:show"
-      }
-    }
+  "some-page": {
+    "route": "/some-page"
+  },
+  "some-{variable}-page-{page}": {
+    "route": "/some/{variable}/page/{page}"
+  }
 }

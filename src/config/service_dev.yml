@@ -33,7 +33,7 @@ services:
 
     PDO:
         class: \PDO
-        arguments: ["mysql:dbname=sakila;host=localhost","root","root"]
+        arguments: ["mysql:dbname=sakila_dev;host=localhost","root","root"]
 
     MyPdo:
         class: Fw\Components\Database\MyPdo

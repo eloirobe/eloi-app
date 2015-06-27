@@ -9,7 +9,6 @@ ini_set("display_errors", 1);
 use Fw\Application;
 use Fw\Components\Container\ServiceYmlContainer;
 
-//Twig_Autoloader::register(); // Enable autoloader
 
 
 $container=new ServiceYmlContainer(__DIR__."/../src/config/service.yml");
