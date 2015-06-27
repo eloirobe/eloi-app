@@ -4,8 +4,8 @@ services:
         arguments: []
 
     Routing:
-        class:     Fw\Components\Routing\RouteParser\PhpParser
-        arguments: ["%app_root%/../src/config/routing.php","@GenericParser"]
+        class:     Fw\Components\Routing\RouteParser\YmlParser
+        arguments: ["%app_root%/../src/config/routing.yml","@GenericParser"]
 
     GenericDispatcher:
         class: Fw\Components\Dispatcher\GenericDispatcher
