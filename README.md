@@ -10,9 +10,9 @@ composer update
 
 ## Apache Configuration
 
-    - Apache Production Configuration file:
+- Apache Production Configuration file:
 
-    ```html
+
     <pre><code>
      <VirtualHost *:80>
          ServerName eloi.fw
@@ -34,11 +34,9 @@ composer update
      </VirtualHost>
      </code>
     </pre>
-    ```
 
-    - Apache Development Configuration file:
+- Apache Development Configuration file:
 
-    ```html
     <pre><code>
      <VirtualHost *:80>
          ServerName eloidev.fw
@@ -59,7 +57,7 @@ composer update
      </VirtualHost>
      </code>
     </pre>
-    ```
+
 ## Database
 
 - Download sakila database
