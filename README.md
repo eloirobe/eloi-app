@@ -12,8 +12,7 @@ composer update
 
 - Apache Production Configuration file:
 
-
-    <pre><code>
+```apacheconf
      <VirtualHost *:80>
          ServerName eloi.fw
          ServerAlias www.eloi.fw
@@ -32,12 +31,11 @@ composer update
             </IfModule>
          </Directory>
      </VirtualHost>
-     </code>
-    </pre>
+```
 
-- Apache Development Configuration file:
+- Apache Development Configuration fil:
 
-    <pre><code>
+```apacheconf
      <VirtualHost *:80>
          ServerName eloidev.fw
          ServerAlias www.eloidev.fw
@@ -55,37 +53,37 @@ composer update
             </IfModule>
          </Directory>
      </VirtualHost>
-     </code>
-    </pre>
+```
 
 ## Database
 
 - Download sakila database
-<pre><code>
+```bash
 wget http://downloads.mysql.com/docs/sakila-db.tar.gz
-</pre></code>
+```
 
 - Uncompress
-<pre><code>
+```bash
 tar -xzvf sakila-db.tar.gz
-</pre></code>
+```
 
 - Copy to mysql
-<pre><code>
+```bash
 mysql -u root -p
 mysql> SOURCE ./sakila-db/sakila-schema.sql;
 mysql> SOURCE ./sakila-db/sakila-data.sql;
-</code></pre>
+```
 
 - For dev you can copy this database to dev database
-<pre><code>
+```bash
 mysqldump -u root -p sakila > dump.sql
 mysqladmin -u root -p create sakila_dev
 mysqldump -u root -p sakila_dev < dump.sql 
-</code></pre>
+```
 
 ## Demo web app
-<pre><code>
+
 http://eloi.fw/index.php/some-page
+
 http://eloi.fw/index.php/some/theuser/page/3
-</code></pre>
+
