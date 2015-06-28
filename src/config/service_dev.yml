@@ -27,8 +27,8 @@ services:
         class: \Twig_Environment
         arguments: ["@Twig_Loader_Filesystem",%twig_array%]
 
-    WebViewTwig:
-        class: Fw\Components\View\WebViewTwig
+    WebView:
+        class: Fw\Components\View\WebView
         arguments: ["@Twig_Environment"]
 
     PDO:
